@@ -1,0 +1,29 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href = "{% static 'css/projekt1style.css' %}" type = "text/css"/>
+<div class="main">
+	<div class="top">
+		<div class="topb">
+			<div class="topblf"><a href="{% url 'app:index'%}">Home</a></div>
+			<div class="topbl1"><a href="">About me</a></div>
+			<div class="topbl2"><a href="">Projects</a></div>
+			<div class="topbl2"><a href="">Contact</a></div>
+			<div class="clear"></div>
+		</div>
+		<div class="topa">Tic Tac Toe</div>
+	</div>
+	<div class="center">
+		<div class="centerc">
+			<span id="0" class="firstlefttop"> - </span><span id="1" class="pointertop"> - </span><span id="2" class="pointertop"> - </span> <br />
+			<span id="3" class="firstleft"> - </span><span id="4" class="pointer"> - </span><span id="5" class="pointer"> - </span> <br />
+			<span id="6" class="firstleft"> - </span><span id="7" class="pointer"> - </span><span id="8" class="pointer"> - </span> <br />
+			<p id="status" class="marginl">Zaczyna gracz X</p>
+			<div class="marginl">
+				<button id="reset">Reset</button>
+			</div>
+		</div>	
+	</div>
+</div>
+<script src="{% static 'js/projekt1js.js' %}"></script>
+{%endblock content%}

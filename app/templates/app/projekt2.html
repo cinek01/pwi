@@ -1,0 +1,57 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href = "{% static 'css/projekt2style.css' %}" type = "text/css"/>
+<div class="main">
+	<div class="top">
+		<div class="topb">
+			<div class="topblf"><a href="{%url 'app:index'%}">Home</a></div>
+			<div class="topbl1"><a href="">About me</a></div>
+			<div class="topbl2"><a href="">Others</a></div>
+			<div class="topbl2"><a href="">Contact</a></div>
+			<div class="clear"></div>
+		</div>
+		<div class="topa">Formularz</div>
+	</div>
+	<div class="center">
+		<div class="centerc">
+			<form id="formularz">
+				<div id="exception"></div>
+				<div>Imię:</div>
+				<div><input type="text" name= "imie" id="imie"/></div>
+				<div class="clear"></div>
+				<div>Nazwisko:</div>
+				<div><input type="text" name= "nazwisko" id="nazwisko"/></div>
+				<div class="clear"></div>
+				<div>Miasto:</div>
+				<div><input type="text" name= "miasto" id="miasto"/></div>
+				<div class="clear"></div>
+				<div>Ulica:</div>
+				<div><input type="text" name= "ulice" id="ulice"/></div>
+				<div class="clear"></div>
+				<div>Numer domu:</div>
+				<div><input type="text" name= "numer domu" id="numerdomu"/></div>
+				<div class="clear"></div>
+				<div>Numer mieszkania:</div>
+				<div><input type="text" name= "numer mieszkania" id="numermieszkania"/></div>
+				<div class="clear"></div>
+				<div>Data urodzenia:</div>
+				<div><input type="text" name= "datę urodzenia" id="dateurodzenia" placeholder="01-01-2000"/></div>
+				<div class="clear"></div>
+				<div>Numer telefonu:</div>
+				<div><input type="text" name= "numer telefonu" id="numertelefonu" placeholder="48666777888"/></div>
+				<div class="clear"></div>
+				<div>Email:</div>
+				<div><input type="text" name= "email" id="email"/></div>
+				<div class="clear"></div>
+				<div>Płeć:</div>
+				<div><input type = "radio" name="płeć" checked value="Kobieta"/>Kobieta <input type = "radio" name="płeć" value="Mężczyzna"/>Mężczyzna </div>
+				<div class="clear"></div>
+				<input type="reset" name="p2" value="Czyść"/>
+    			<input type="button" name="p3" value="Wyślij" onclick="wynik()" />
+			</form>
+		</div>	
+		</div>
+</div>
+<script src="{% static 'js/regularne2.js' %}"></script>
+{% endblock content %}

@@ -1,0 +1,49 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+<div class="main" onload="show_home()">
+		<div class="top">
+			<div class="topb">
+				<div class="topblf"><a href="#home" onclick="show_home()">Home</a></div>
+				<div class="topbl1"><a href="#aboutMe" onclick="show_about_me()">About me</a></div>
+				<div class="newclear"></div>
+				<div class="topbl2"><a href="#projects" onclick="show_projects()">Projects</a></div>
+				<div class="topbl2"><a href="#contact" onclick="show_contact()">Contact</a></div>
+				<div class="clear"></div>
+			</div>
+			<section id="first" class="page">
+				<div class="topaa">Home Page</div>
+			</section>
+			
+		</div>
+		<div class="center">
+			<section id="second" class="page">
+				<div class="centert">About me</div>
+				<div class="centerb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</section>
+			<section id="third" class="page">
+				<div class="centert">Projects</div>
+				<div class="centerc"><a href="{% url 'app:projekt1' %}">Zadanie 2</a></div>
+				<div class="centerb">Tic Tac Toe</div>
+				<div class="centerc"><a href="{% url 'app:projekt2' %}">Zadanie 3</a></div>
+				<div class="centerb"> Formularz</div>
+				<div class="centerc"><a href="{% static 'kod.zip' %}" download="kod.zip" target="_blank">Kod Strony</a></div>
+			</section>
+			<section id="fourth" class="page">
+				<div class="centert">Contact</div>
+				<div class="centerb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</section>
+		</div>
+</div>
+<script src="{% static 'js/spa.js' %}"></script>
+{% endblock%}

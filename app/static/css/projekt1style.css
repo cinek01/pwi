@@ -1,0 +1,189 @@
+*{box-sizing:border-box;}
+.pointer:hover 
+{
+    background-color: gray;
+}
+.pointertop:hover 
+{
+    background-color: gray;
+}
+.firstleft:hover 
+{
+    background-color: gray;
+}
+.firstlefttop:hover
+{
+    background-color: gray;
+}
+
+.pointertop
+{
+    cursor: pointer;
+    margin: 6px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+    padding: 10px;
+    font-size: 80px;
+    margin-top: 50px;
+}
+.pointer
+{
+    cursor: pointer;
+    margin: 6px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+    padding: 10px;
+    font-size: 80px;
+}
+.firstleft
+{
+    cursor: pointer;
+    margin: 6px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+    padding: 10px;
+    font-size: 80px;
+    margin-left: 25%;
+}
+.firstlefttop
+{
+    cursor: pointer;
+    margin: 6px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+    padding: 10px;
+    font-size: 80px;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.marginl
+{
+    margin-left: 230px;
+}
+@media only screen and (max-width : 640px) 
+{
+    .pointertop
+{
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.pointer
+{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 50px;
+}
+.firstleft
+{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 8%;
+}
+.firstlefttop
+{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 8%;
+    margin-top: 30px;
+}
+.marginl
+{
+    margin-left: 10%;
+}
+}
+@media only screen and (max-width : 480px) 
+{
+
+        .pointertop
+    {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .pointer
+    {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        font-size: 50px;
+    }
+    .firstleft
+    {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        font-size: 50px;
+        margin-left: 2%;
+    }
+    .firstlefttop
+    {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        font-size: 50px;
+        margin-left: 2%;
+        margin-top: 20px;
+    }
+    .marginl
+    {
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width : 380px) 
+{
+
+        .pointertop
+    {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .pointer
+    {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        font-size: 40px;
+    }
+    .firstleft
+    {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        font-size: 40px;
+        margin:0 auto;
+    }
+    .firstlefttop
+    {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        font-size: 40px;
+        margin:0 auto;
+    }
+    .marginl
+    {
+        margin: 0 auto;
+    }
+}
